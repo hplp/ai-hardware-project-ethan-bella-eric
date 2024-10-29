@@ -21,7 +21,7 @@
 
 ## Technology Stack:
 (List the hardware platform, software tools, language(s), etc. you plan to use)
-
+TinyML
 ## Expected Outcomes:
 (Describe what you expect to deliver at the end of the project)
 
