@@ -1,12 +1,12 @@
 # AI_Hardware_Project_Template
 
 ## Team Name: 
-(Enter your team name from Canvas)
+4501_project_group 2
 
 ## Team Members:
-- Student 1
-- Student 2
-- Student 3
+- Ethan Jenkins
+- Bella Heintges
+- Eric Sheetz
 
 ## Project Title:
 (Enter your project title - be creative)
