@@ -1,4 +1,5 @@
 # AI Hardware Project Proposal
+### ECE 4501
 
 ## Team Name: 
 4501_project_group 2
