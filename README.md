@@ -30,4 +30,8 @@ We are going to create a system that can identify local wildlife based on their 
 
 ## Timeline:
 (Provide a rough timeline or milestones for the project)
-
+By 11/8: Select hardware 
+By 11/15: Choose classifications
+By 11/22: Choose network structure
+By 11/29: Have network trained
+By 12/
