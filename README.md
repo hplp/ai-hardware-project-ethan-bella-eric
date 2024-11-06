@@ -1,8 +1,8 @@
 # AI Hardware Project Proposal
-### ECE 4501
+### ECE 4501 - Fall 2024
 
 ## Team Name: 
-4501_project_group 2
+### 4501_project_group 2
 
 ## Team Members:
 - Ethan Jenkins
