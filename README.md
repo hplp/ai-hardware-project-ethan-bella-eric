@@ -12,8 +12,7 @@
 Bioacoustic Animal Identification
 
 ## Project Description:
-We are going to create a system that can identify local wildlife based on their vocal calls using TinyML on a microcontroller
-
+- We plan to design a compact system capable of identifying local wildlife species by recognizing their vocal calls by leveraging the power of TinyML. This system will be deployed on a microcontroller specifically chosen for its capability to record and process audio data in real-time. By analyzing the audio inputs, our system will be able to detect and classify animal sounds, allowing for efficient and on-site wildlife monitoring.
 
 ## Key Objectives:
 - Determine ideal hardware, determine ML network structure. 
