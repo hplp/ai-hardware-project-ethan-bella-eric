@@ -26,7 +26,7 @@ We are going to create a system that can identify local wildlife based on their 
 - Hardware Tools: Syntiant TinyML
 
 ## Expected Outcomes:
-- By the end of the semester we will have a working model that can listen to an animal sound and correctly identify that sound with at least 80% accuracy. We will have a model that has been trained to correctly identify these sounds for a number of animals common around charlottesville. 
+- By the end of the semester we will have a working model that can listen to an animal sound and correctly identify that sound with at least 80% accuracy. We will have a model that has been trained to correctly identify these sounds for a number of animals common around Charlottesville. 
 
 ## Timeline:
 (Provide a rough timeline or milestones for the project)
