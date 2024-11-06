@@ -34,4 +34,4 @@ We are going to create a system that can identify local wildlife based on their 
  - By 11/15: Choose classifications
  - By 11/22: Choose network structure
  - By 11/29: Have network trained
- - By 12/
+ - By 12/6: Successful test of deployed network
