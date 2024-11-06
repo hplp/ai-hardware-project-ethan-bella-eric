@@ -13,7 +13,7 @@ Bioacoustic Animal Identification
 
 ## Project Description:
 (Provide a short description of the problem you're addressing)
-Identify local wildlife based on their calls using TinyML on a microcontroller
+We are going to create a system that can identify local wildlife based on their vocal calls using TinyML on a microcontroller
 
 
 ## Key Objectives:
