@@ -1,5 +1,4 @@
-# AI Hardware Project
-## ECE 4501 - Fall 2024
+# AI Hardware Project Proposal
 
 ## Team Name: 
 4501_project_group 2
