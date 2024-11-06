@@ -9,7 +9,7 @@
 - Eric Sheetz
 
 ## Project Title:
-(Enter your project title - be creative)
+Bioacoustic Bird Identification
 
 ## Project Description:
 (Provide a short description of the problem you're addressing)
