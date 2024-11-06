@@ -20,7 +20,7 @@ Bioacoustic Animal Identification
 - Use the deployed hardware with the trained network to correctly identify animals based on their calls. 
 
 ## Technology Stack:
-- PLatform: TinyML 
+- Platform: TinyML 
 - Software Tools: C/C++
 - Hardware Tools: Syntiant TinyML
 
