@@ -9,17 +9,17 @@
 - Eric Sheetz
 
 ## Project Title:
-Bioacoustic Bird Identification
+Bioacoustic Animal Identification
 
 ## Project Description:
 (Provide a short description of the problem you're addressing)
-Identify local birds based on their calls using TinyML on a microcontroller
+Identify local wildlife based on their calls using TinyML on a microcontroller
 
 
 ## Key Objectives:
 - Determine ideal hardware, determine ML network structure. 
 - Determine classification categories and train network. 
-- Use the deployed hardware with the trained network to correctly identify birds based on their calls. 
+- Use the deployed hardware with the trained network to correctly identify animals based on their calls. 
 
 ## Technology Stack:
 (List the hardware platform, software tools, language(s), etc. you plan to use)
