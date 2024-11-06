@@ -21,9 +21,9 @@ We are going to create a system that can identify local wildlife based on their 
 - Use the deployed hardware with the trained network to correctly identify animals based on their calls. 
 
 ## Technology Stack:
-(List the hardware platform, software tools, language(s), etc. you plan to use)
-TinyML - C/C++ ??
-Decide on hardware
+PLatform: TinyML 
+Software Tools: C/C++
+Hardware Tools: Syntiant TinyML
 
 ## Expected Outcomes:
 (Describe what you expect to deliver at the end of the project)
