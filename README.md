@@ -35,3 +35,10 @@ We plan to design a compact system capable of identifying local wildlife species
  - By 11/22: Choose network structure
  - By 11/29: Have network trained
  - By 12/6: Successful test of deployed network
+
+
+
+## Milestone 1:
+- Have training and testing datasets compiled for our 5 selected animals (sheep, cow, pig, dog, rooster)
+- Have began training model in Edge Impulse using Datasets
+- Have compiled other animal sound audio files (.wav) to use during testing (lion, monkey, frog, bird)
