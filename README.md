@@ -28,8 +28,7 @@ We plan to design a compact system capable of identifying local wildlife species
 
 ## Expected Outcomes:
 - By the end of the semester we will have a working model that can listen to an animal sound and correctly identify that sound with at least 80% accuracy.
-- We will have a model that has been trained to correctly identify these sounds for at least 10 animals common around Charlottesville. 
-
+- We will have a model that has been trained to correctly identify these sounds for at least 5 common farm animals.
 ## Timeline:
  - By 11/8: Select hardware
  - By 11/15: Choose classifications
