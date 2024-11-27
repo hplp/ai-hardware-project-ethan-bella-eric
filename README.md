@@ -23,7 +23,7 @@ We plan to design a compact system capable of identifying local animal species b
 
 ## Technology Stack:
 - Platform: TinyML 
-- Software Tools: C/C++
+- Software Tools: C/C++, Edge Impulse
 - Hardware Tools: Syntiant TinyML
 
 ## Expected Outcomes:
