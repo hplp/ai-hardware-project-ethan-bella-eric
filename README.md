@@ -29,6 +29,7 @@ We plan to design a compact system capable of identifying local animal species b
 ## Expected Outcomes:
 - By the end of the semester we will have a working model that can listen to an animal sound and correctly identify that sound with at least 80% accuracy.
 - We will have a model that has been trained to correctly identify these sounds for at least 5 common farm animals.
+
 ## Timeline:
  - By 11/8: Select hardware
  - By 11/15: Choose classifications
@@ -39,17 +40,22 @@ We plan to design a compact system capable of identifying local animal species b
 
 
 # Milestone 1:
-## Update: 
-*Due to hardware difficulties regarding the Syntiant chip, we have not yet deployed our model on the embedded system; however, the model can still be trained (and tested) using the Edge Impulse software*
-- Have training and testing datasets compiled for our 5 selected animals (sheep, cow, pig, dog, rooster)
-- Have began training model in Edge Impulse using Datasets
-- Have compiled other animal sound audio files (.wav) to use during testing (lion, monkey, frog, bird)
-- Data Aquisition:
-- ![image](https://github.com/user-attachments/assets/0d94ba61-5a99-4302-973c-db4e6b0c4040)
-- Impulse Design:
-- ![image](https://github.com/user-attachments/assets/272dc8c8-48f1-49b8-8c88-287356465e72)
-- Spectogram:
-- ![image](https://github.com/user-attachments/assets/3d01fa20-b21e-4c97-aee7-34042e5b23cc)
+*Due to hardware challenges with the Syntiant chip, we have not yet deployed our model on the embedded system. However, the model can still be trained and tested using Edge Impulse software. Additionally, we have started planning future classification parameters to achieve higher training accuracy in subsequent iterations.*
+
+## Timeline Update:
+- Hardware selected: Syntiant TinyML, using Edge Impulse (C/C++)
+- Classifications chosen: Selected 5 animals for initial testing and training (sheep, cow, pig, dog, rooster)
+- Data compiled: Testing and training datasets gathered for the 5 selected animals
+- Training started: Using *Edge Impulse*, have began training our model using Datasets
+- Additional testing: Compiled 4 other animal call audio files (.wav) to use during testing (lion, monkey, frog, bird)
+
+## Images:
+### Data Aquisition:
+![image](https://github.com/user-attachments/assets/0d94ba61-5a99-4302-973c-db4e6b0c4040)
+### Impulse Design:
+![image](https://github.com/user-attachments/assets/272dc8c8-48f1-49b8-8c88-287356465e72)
+### Spectogram:
+![image](https://github.com/user-attachments/assets/3d01fa20-b21e-4c97-aee7-34042e5b23cc)
 
 
 
