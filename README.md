@@ -44,8 +44,11 @@ We plan to design a compact system capable of identifying local wildlife species
 - Have compiled other animal sound audio files (.wav) to use during testing (lion, monkey, frog, bird)
 - Data Aquisition:
 - ![image](https://github.com/user-attachments/assets/0d94ba61-5a99-4302-973c-db4e6b0c4040)
-- ![image](https://github.com/user-attachments/assets/3d01fa20-b21e-4c97-aee7-34042e5b23cc)
+- Impulse Design:
 - ![image](https://github.com/user-attachments/assets/272dc8c8-48f1-49b8-8c88-287356465e72)
+- Spectogram:
+- ![image](https://github.com/user-attachments/assets/3d01fa20-b21e-4c97-aee7-34042e5b23cc)
+
 
 
 
