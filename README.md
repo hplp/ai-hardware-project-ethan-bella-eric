@@ -39,7 +39,7 @@ We plan to design a compact system capable of identifying local animal species b
 
 
 ## Milestone 1:
-- *Due to hardware difficulties we have not yet deployed our model on the embedded system, however, the model can still be trained using the edge impulse software
+- *Due to hardware difficulties we have not yet deployed our model on the embedded system, however, the model can still be trained (and tested) using the edge impulse software*
 - Have training and testing datasets compiled for our 5 selected animals (sheep, cow, pig, dog, rooster)
 - Have began training model in Edge Impulse using Datasets
 - Have compiled other animal sound audio files (.wav) to use during testing (lion, monkey, frog, bird)
