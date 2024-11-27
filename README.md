@@ -54,7 +54,7 @@ We plan to design a compact system capable of identifying local animal species b
 
 ![image](https://github.com/user-attachments/assets/0d94ba61-5a99-4302-973c-db4e6b0c4040)
 
-We have collected 14 minutes and 53 seconds of relevant audio data for use in the testing and training process. These files vary in length, and so far we have compiled 155 files for the training dataset, with the test dataset containing 43 files. Each sample has been labeled according to its classification, corresponding to one of the five selected animals. Currently, our model yields a train/test split of 78%/22%.
+We have collected 14 minutes and 53 seconds of relevant audio data for use in the testing and training process. These files vary in length, and so far we have compiled 155 files for the training dataset, with the test dataset containing 43 files. Each sample has been labeled according to its classification, corresponding to one of the five selected animals. Currently, our model runs a train/test split of 78%/22%.
 
 ## Impulse Design:
 *Taking the raw data, impulse processes the signal to extract features and classify new data.*
@@ -71,12 +71,13 @@ We are in the process of visualizing the processed audio data in three stages: (
 We have configured the spectrogram to use a frame length of 0.5 seconds, with a stride of 0.01 seconds. The FFT (Fast Fourier Transform) is computed over a series of 256 frames, capturing the frequency components of the audio. After processing, we can view a heat-map of the DSP (Digital Signal Processing) results for each spectrogram, along with the extracted features from the raw audio data, which are crucial for our classification process.
 
 ## Next Steps:
-(1) Expanding the Dataset: Increasing the number of audio samples in both the training and test datasets will help achieve a more balanced split and improve the model's generalization. Ensuring that the dataset includes a variety of sound recordings for each animal will provide more robust data for training and help avoid overfitting.
-
-(2) Revising the Impulse Design: We plan to revist the impulse design, particularly the input features used for classification. Exploring additional preprocessing techniques, such as filtering or normalization, may enhance the quality of the features extracted from the audio and contribute to better classification performance.
+(1) Expanding/Revisiting the Dataset: Increasing the number of audio samples in both the training and test datasets will help achieve a more balanced split and improve the model's generalization. Ensuring that the dataset includes a variety of sound recordings for each animal will provide more robust data for training and help avoid overfitting.
+-  Diversify each classifier dataset: Ensure a wide variety of call types for each animal are recorded in different environments.
+-  Balance classes: If underrepresented, implement augmentation techniques (adding noise, pitch shifting, or time stretching) to create more samples for those classes.
+  
+(2) Revising the Impulse Design: We plan to revist the impulse design, particularly the input features used for classification. Exploring additional preprocessing techniques (filtering or normalization) may enhance the quality of the features extracted from the audio and contribute to better model/classification performance.
 
 (3) Adjusting Spectrogram Settings: We will experiment with different frame lengths and stride values to better capture the frequency characteristics of animal sounds. By fine-tuning these settings, we can optimize the resolution of the spectrogram and potentially improve the model's ability to distinguish between animal calls.
-
+- Consider implementing a FFT length of 512 to capture more frequency details, but adknowedge the additional power processing requirements.
+  
 (4) Integrating Hardware with EdgeImpulse: Necessary to configure the Syntiant TinyML hardware to process and classify animal vocal calls using the trained model directly on the embedded device. Leveraging Syntiant's specialized AI accelerator, we will work to achieve real-time, efficient audio processing in a compact, on-site form. 
-
-
