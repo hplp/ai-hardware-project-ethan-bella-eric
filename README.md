@@ -48,6 +48,7 @@ We plan to design a compact system capable of identifying local animal species b
 - Data acquired: Testing and training datasets gathered for the 5 selected animals
 - Training started: Using *Edge Impulse*, have began training our model using Datasets
 - Further testing: Compiled 4 other animal call audio files (.wav) to use during testing {lion, monkey, frog, bird}
+- Drafted training models: Began coding a .tflite model that would consider utilizing MFCC's within an SVC for classification tasks
 
 ## Data Aquisition:
 *Preparation of the raw audio data that has been collected and organized for model training, along with the corresponding labels for each animal sound.*
@@ -98,6 +99,8 @@ Sample Sites to Consider:
 - Begin by extracting Mel-Frequency Cepstral Coefficients (MFCCs) from the audio data, as they are widely used features for speech and sound classification.
 - Externally train a Support Vector Machine (SVM) classifier to keep the initial model simple and interpretable, this will help classify animal calls based on the extracted MFCC features.
 - When trained, import the model to serve as baseline for further optimization and more complex models.
+
+Draft model structure: https://colab.research.google.com/drive/1vip2mYhjTgg2r_5hUK40Rlq5toV6AaNO?usp=sharing
 
 (2) Utilize a spectrogram-based CNN for better accuracy:
 - Preprocess the audio data intro spectrograms using EdgeImpulse's capabilities.
