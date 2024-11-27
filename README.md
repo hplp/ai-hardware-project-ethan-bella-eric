@@ -77,6 +77,7 @@ We have configured the spectrogram to use a frame length of 0.5 seconds, with a 
 - Add additional audio samples in both the training and test datasets.
 - Ensure a wide variety of recordings for each animal are tabulated, recorded in different environments.
 - Implement augmentation techniques for undrrepresented classes (adding noise, pitch shifting, or time stretching) to create more samples for those classes.
+
 Sample Sites to Consider:
 - https://www.findsounds.com/ISAPI/search.dll?keywords=sheep
 - https://www.wavsource.com/sfx/sfx.htm
