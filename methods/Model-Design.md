@@ -10,6 +10,7 @@ To evaluate the model's performance accurately, the dataset was split into train
 - Training Set: 82% of the dataset (464 audio files) for training the model.
 - Testing Set: 18% of the dataset (99 audio files) for testing the model's generalization ability.
 - ![image](https://github.com/user-attachments/assets/9755921d-a53e-478d-b530-2b4b78c3c3b6)
+
 This split ensures the model learns from the majority of the data while being tested on unseen examples for unbiased evaluation.
 
 ## Definition of Model Input
