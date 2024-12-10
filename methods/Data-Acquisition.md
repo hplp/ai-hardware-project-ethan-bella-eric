@@ -16,4 +16,4 @@ Through Kaggle, we downloaded datasets containing sounds for each of our target 
 - Cows: Samples of moos and similar vocalizations.
 - Dogs: Audio files capturing barks, growls, and whines.
 - Frogs: Croaks and other frog-specific sounds.
-These audio files were organized into folders based on the animal category and uploaded to Edge Impulse Studio for preprocessing and training.
+- These audio files were organized into folders based on the animal category and uploaded to Edge Impulse Studio for preprocessing and training.
