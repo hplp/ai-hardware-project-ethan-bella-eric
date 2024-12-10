@@ -49,7 +49,7 @@ The Classification Learning Block was used to train the model to distinguish bet
   - The processed outputs from the MFE and Spectrogram blocks (a total of 48,139 features) were fed into the learning block.
 - Algorithm:
   - A lightweight neural network was selected, designed to run efficiently on resource-constrained edge devices like the Syntiant TinyML board.
-- ![image](https://github.com/user-attachments/assets/2f48d59e-cc5a-4416-a768-d9fca64b1cc1)
+- ![image](https://github.com/user-attachments/assets/4d6f3355-3afc-4a1f-872f-108d6ff460b2)
 
 - Output Classes:
   - The learning block was configured to classify each audio sample into one of the four categories: cat, cow, dog, or frog.
