@@ -1,4 +1,4 @@
-##Repository Deliverables:
+## Repository Navigation:
 
 [Project Proposal](Project_Proposal.md)
 
