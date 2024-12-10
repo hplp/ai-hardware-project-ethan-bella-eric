@@ -14,11 +14,37 @@ To evaluate the model's performance accurately, the dataset was split into train
 This split ensures the model learns from the majority of the data while being tested on unseen examples for unbiased evaluation.
 
 ## Definition of Model Input
-How to input
+The raw audio files were processed into a standardized format for consistent input to the machine learning model.
+- Each audio file was segmented into 3-second windows. For files longer than 3 seconds, a 1-second stride was applied to extract additional samples.
+- A nominal sampling frequency, common for digital audio, was used across all files. This ensured uniformity and compatibility with Edge Impulse’s processing blocks.
+- The raw audio signals were represented as time-series data, ready for further transformation by the processing blocks.
+- ![image](https://github.com/user-attachments/assets/b67e2824-9dab-46b1-ba52-656c2ee1a899)
+
 
 ## Development of Processing Blocks
-What are processing blocks
-Which ones to (we) use
+Processing blocks are critical for transforming raw audio signals into features that the learning block can use for classification. We chose to use two different processing blocks, a MFE and a Spectrogram:
+- Mel Frequency Energy (MFE):
+  - Extracts key features from the audio signal by focusing on frequency ranges relevant to animal vocalizations.
+  - Emphasizes the audio characteristics most useful for classification, such as pitch and tonal variations.
+  - MFE Settings:
+  - ![image](https://github.com/user-attachments/assets/e1c95835-73dc-4e88-9f8e-58ea795fedf9)
+  - MFE Results:
+  - ![image](https://github.com/user-attachments/assets/1f13955b-186d-45e9-b033-7033a032a97a)
+  - ![image](https://github.com/user-attachments/assets/61f46946-6a9c-4d75-8a47-d943029f56cb)
+
+- Spectrogram:
+  - Provides a detailed visualization of audio frequencies over time, highlighting changes in frequency patterns.
+  - The spectrogram was particularly useful for identifying dynamic features in animal sounds, such as a frog’s croak or a cat’s meow.
+  - Spectrogram Settings:
+  - ![image](https://github.com/user-attachments/assets/0bf6a5ea-db60-4555-9f2d-e4fb334ac3d3)
+  - Spectrogram Results:
+  - ![image](https://github.com/user-attachments/assets/04e7201b-e7f6-4940-b16f-064cc48fe2ff)
+  - ![image](https://github.com/user-attachments/assets/b23aae83-3dbb-45bb-bc63-79998ae715b5)
+
+  
+
+
+By combining these two processing blocks, the model could capture both static and dynamic features, ensuring robust classification.
 
 ## Definition of Classification Block
 How to
