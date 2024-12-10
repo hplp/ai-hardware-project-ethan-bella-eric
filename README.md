@@ -25,7 +25,7 @@
 | Step 3:  [Model Design using Edge Impulse](Model_Design.md) |
 | Step 4:  [Model Training and Testing](Training_and_Testing.md) |
 | Step 5:  [Hardware Integration](Integration_and_Results.md) |
-| Step 6:  [Live Demonstration](Deployment.md) |
+| Step 6:  [Deployment and Live Demo](Deployment.md) |
 
 ## Results and Discussion
 (PARAGRAPH) BLAH
