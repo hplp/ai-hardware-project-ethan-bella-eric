@@ -19,6 +19,7 @@
 Hardware:
 - Syntiant TinyML Board
 - Linux, or Linux-based system enabled device
+
 Software:
 - Linux, or Linux-based system
 - Package tools (git, edge-impulse-cli, arduino-cli)
