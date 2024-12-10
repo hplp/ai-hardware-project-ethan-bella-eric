@@ -6,14 +6,23 @@
   
 ### Background
 *Have you ever heard an animal sound and wondered what made it?*
-- WHY the project is important
-- How the system can be used
+- BLAH WHY the project is important
+- BLAH How the system can be used
   
 ## Objectives
-- List objectives of final product
+- Develop a machine learning algorithm capable of processing and identifying the animal responsible for a given audio input
+- Train the model such that it is capable of classifying the sounds of 4 common animals (dog, cat, frog, cow)
+- Develop a trained model able of classifying with at least an 80% accuracy
+- Integrate the program with the Syntiant TinyML board, utilizing the built-in microphone, so the system can be used on-site
   
-## Technology Stack
-- List hardware and software that we used/HOW TO DO IT
+## Necessary Technology
+Hardware:
+- Syntiant TinyML Board
+- Linux, or Linux-based system enabled device
+Software:
+- Linux, or Linux-based system
+- Package tools (git, edge-impulse-cli, arduino-cli)
+- Edge Impulse Studio
 
 ## Methodology
 (PARAGRAPH) BLAH BLAH intro line but just list steps w/ links
