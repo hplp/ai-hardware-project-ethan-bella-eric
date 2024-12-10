@@ -20,12 +20,12 @@
 
 | How-To Guide: |
 |:-------------------|
-| Step 1:  [Aggregation of Tools](Tools.md) |
-| Step 2:  [Data Acquisition and Research](Data-Acquisition.md) |
-| Step 3:  [Model Design using Edge Impulse](Model-Design.md) |
-| Step 4:  [Model Training and Testing](Training-and-Testing.md) |
-| Step 5:  [Hardware Integration](Integration-and-Results.md) |
-| Step 6:  [Deployment and Live Demo](Deployment.md) |
+| Step 1:  [Aggregation of Tools](methods/Tools.md) |
+| Step 2:  [Data Acquisition and Research](methods/Data-Acquisition.md) |
+| Step 3:  [Model Design using Edge Impulse](methods/Model-Design.md) |
+| Step 4:  [Model Training and Testing](methods/Training-and-Testing.md) |
+| Step 5:  [Hardware Integration](methods/Integration-and-Results.md) |
+| Step 6:  [Deployment and Live Demo](methods/Deployment.md) |
 
 ## Results and Discussion
 (PARAGRAPH) BLAH
@@ -33,12 +33,12 @@
 ### Model Performance
 (PARAGRAPH)
 - Discussion of results
-- Performance better? -- Link to explanation of issue/mitigation strat --  [Edge Impulse Issues](Edge-Issues.md)
+- Performance better? -- Link to explanation of issue/mitigation strat --  [Edge Impulse Issues](issues/Edge-Issues.md)
   
 ### Hardware Integration
 (PARAGRAPH)
 - Results/what would have been expected results
-- Issues with integration -- Link to explanation of issue/mitigation strat --  [Hardware Integration Issues](Integration-Issues.md)
+- Issues with integration -- Link to explanation of issue/mitigation strat --  [Hardware Integration Issues](issues/Integration-Issues.md)
 
 ### Personal Development
 (PARAGRAPH)
