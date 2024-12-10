@@ -17,3 +17,6 @@ Through Kaggle, we downloaded datasets containing sounds for each of our target 
 - Dogs: Audio files capturing barks, growls, and whines.
 - Frogs: Croaks and other frog-specific sounds.
 - These audio files were organized into folders based on the animal category and uploaded to Edge Impulse Studio for preprocessing and training.
+
+## Importance of Research and Data Quality
+The selection of high-quality audio files and the use of a reputable source like Kaggle ensure that our dataset is robust and capable of supporting accurate classification. Future improvements may involve sourcing additional datasets or recording custom audio to expand the diversity of the samples.
