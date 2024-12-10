@@ -5,7 +5,7 @@
 #### Contributors: Ethan Jenkins (thw2nv), Eric Sheetz (fsm6wv), Bella Heintges (xvj5pd)
   
 ### Background
-**Have you ever heard an animal sound and wondered what made it?**
+*Have you ever heard an animal sound and wondered what made it?*
 - WHY the project is important
 - How the system can be used
   
