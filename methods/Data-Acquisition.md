@@ -1,11 +1,12 @@
 # Step 2: Data Acquisition and Research
 
 ## Research:
-- First, you should do research and identify a list of specific animals which you would like to the system to be able to classify. 
+- The first step in building a robust bioacoustic classification system is to identify the specific animals you want to classify. For this project, we focused on four animal categories: cats, cows, dogs, and frogs. These animals were chosen based on their distinct sound patterns and availability of audio data.
 
 ## Data Aquisition
-- The second step is data acquisition and research. For this project, you want to collect as many audio files as possible for each of the animals you choose to classify. Generally, the more audio files you collect, the more accurate your model will be. 
-- The audio files work best uploaded as .wav files, as WAV files are uncompressed and lossless. They retain all the original data and provide the highest possible quality sound output, which is ideal for accurate audio classification.
-- To collect these audio files, public datasets are a great place to look. We used Kaggle.com, a web platform that's a community for data scientists and machine learning professionals, which had a number of audio file datasets for various sound sources. Through Kaggle.com we were able to search for datasets of audio files for animals we wanted our system to classify, shown below:
+The second step is collecting high-quality audio files for each animal. A larger dataset with diverse examples is crucial for improving the model's accuracy. Key considerations include:
+- File Format: We prioritized .wav files for their uncompressed and lossless nature, ensuring maximum sound quality for accurate feature extraction.
+- Source: Public datasets are an invaluable resource. We used Kaggle.com, a leading platform for datasets and machine learning projects. Kaggle provided access to well-labeled datasets containing audio files of the animals we wanted to classify, shown below:
+  
 - ![image](https://github.com/user-attachments/assets/e3f4cb41-d31b-4d79-85b1-039c448acf60)
 
