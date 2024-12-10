@@ -41,10 +41,18 @@ Processing blocks are critical for transforming raw audio signals into features 
   - ![image](https://github.com/user-attachments/assets/04e7201b-e7f6-4940-b16f-064cc48fe2ff)
   - ![image](https://github.com/user-attachments/assets/b23aae83-3dbb-45bb-bc63-79998ae715b5)
 
-  
-
-
 By combining these two processing blocks, the model could capture both static and dynamic features, ensuring robust classification.
 
 ## Definition of Classification Block
-How to
+The Classification Learning Block was used to train the model to distinguish between the four animal categories.
+- Input Features:
+  - The processed outputs from the MFE and Spectrogram blocks (a total of 48,139 features) were fed into the learning block.
+- Algorithm:
+  - A lightweight neural network was selected, designed to run efficiently on resource-constrained edge devices like the Syntiant TinyML board.
+- ![image](https://github.com/user-attachments/assets/2f48d59e-cc5a-4416-a768-d9fca64b1cc1)
+
+- Output Classes:
+  - The learning block was configured to classify each audio sample into one of the four categories: cat, cow, dog, or frog.
+  - ![image](https://github.com/user-attachments/assets/a3e66502-495c-4519-b40f-89f42d7442dd)
+
+This learning block forms the core of the classification system, translating processed audio data into actionable results.
