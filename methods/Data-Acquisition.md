@@ -10,3 +10,10 @@ The second step is collecting high-quality audio files for each animal. A larger
   
 - ![image](https://github.com/user-attachments/assets/e3f4cb41-d31b-4d79-85b1-039c448acf60)
 
+## Audio File Collection
+Through Kaggle, we downloaded datasets containing sounds for each of our target animals:
+- Cats: Audio samples of meows, purrs, and other cat sounds.
+- Cows: Samples of moos and similar vocalizations.
+- Dogs: Audio files capturing barks, growls, and whines.
+- Frogs: Croaks and other frog-specific sounds.
+- These audio files were organized into folders based on the animal category and uploaded to Edge Impulse Studio for preprocessing and training.
