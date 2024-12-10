@@ -1,4 +1,7 @@
 ##Repository Deliverables:
-[Project Proposal](Final_Project_Presentation.pdf)
-[Milestone 1](Final_Project_Presentation.pdf)
+
+[Project Proposal](Project_Proposal.md)
+
+[Milestone 1](Milestone_1.md)
+
 [Final Project Presentation](Final_Project_Presentation.pdf)
