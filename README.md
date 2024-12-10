@@ -3,11 +3,6 @@
 # ShazAnimal: Bioacoustic Animal Identifier
 #### Project Group #2: Who's Calling?
 #### Contributors: Ethan Jenkins (), Eric Sheetz (), Bella Heintges (xvj5pd)
-
-## Project Overview
-(PARAGRAPH)
-- WHAT is the project
-- WHAT does the project do
   
 ### Background
 (PARAGRAPH)
