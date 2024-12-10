@@ -28,7 +28,7 @@ We plan to design a compact system capable of identifying local animal species b
 
 ## Expected Outcomes:
 - By the end of the semester we will have a working model that can listen to an animal sound and correctly identify that sound with at least 80% accuracy.
-- We will have a model that has been trained to correctly identify these sounds for at least 5 common farm animals.
+- We will have a model that has been trained to correctly identify these sounds for at least 4 common animals.
 
 ## Timeline:
  - By 11/8: Select hardware
