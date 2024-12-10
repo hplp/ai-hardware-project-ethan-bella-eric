@@ -1,8 +1,8 @@
 #### Final Project: AI Hardware (ECE 4501)
 
 # ShazAnimal: Bioacoustic Animal Identifier
-### Project Group #2: Who's Calling?
-### Contributors: Ethan Jenkins (), Eric Sheetz (), Bella Heintges (xvj5pd)
+#### Project Group #2: Who's Calling?
+#### Contributors: Ethan Jenkins (), Eric Sheetz (), Bella Heintges (xvj5pd)
 
 ## Project Overview
 (PARAGRAPH)
@@ -23,14 +23,14 @@
 ## Methodology
 (PARAGRAPH) BLAH BLAH intro line but just list steps w/ links
 
-|  | Task |
-|:-------------------|:-------------------|
-| Step 1: | [Aggregation of Tools](Tools.md) |
-| Step 2: | [Data Acquisition and Research](Data_Acquisition.md) |
-| Step 3: | [Model Design using Edge Impulse](Model_Design.md) |
-| Step 4: | [Model Training and Testing](Training_and_Testing.md) |
-| Step 5: | [Hardware Integration](Integration_and_Results.md) |
-| Step 6: | [Live Demonstration](Deployment.md) |
+| How-To Guide: |
+|:-------------------|
+| Step 1:  [Aggregation of Tools](Tools.md) |
+| Step 2:  [Data Acquisition and Research](Data_Acquisition.md) |
+| Step 3:  [Model Design using Edge Impulse](Model_Design.md) |
+| Step 4:  [Model Training and Testing](Training_and_Testing.md) |
+| Step 5:  [Hardware Integration](Integration_and_Results.md) |
+| Step 6:  [Live Demonstration](Deployment.md) |
 
 ## Results and Discussion
 (PARAGRAPH) BLAH
