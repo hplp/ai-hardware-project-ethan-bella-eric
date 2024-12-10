@@ -23,7 +23,7 @@
 ## Methodology
 (PARAGRAPH) BLAH BLAH intro line but just list steps w/ links
 
-| Step | Process |
+|  | Task |
 |:-------------------|:-------------------|
 | Step 1: | [Aggregation of Tools](Tools.md) |
 | Step 2: | [Data Acquisition and Research](Data_Acquisition.md) |
