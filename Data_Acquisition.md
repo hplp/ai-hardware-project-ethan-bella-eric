@@ -1,3 +1,3 @@
 # Step 2: Data Acquisition and Research
-
-Here is like how to get the data, what we used how to load it into edge impulse
+- The second step is data acquisition and research. For this project, you want to collect as many audio files as possible for each of the animals you choose to classify
+- 
