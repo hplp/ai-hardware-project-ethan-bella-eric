@@ -3,14 +3,15 @@
 # ShazAnimal: Bioacoustic Animal Identifier
 ### Project Group #2: Who's Calling?
 ### Contributors: Ethan Jenkins (), Eric Sheetz (), Bella Heintges (xvj5pd)
-You can think of it as a tutorial with objectives, the expected results, known issues, how to fix them, etc.
 
 ## Project Overview
+(PARAGRAPH)
 - WHAT is the project
 - WHAT does the project do
   
 ### Background
-- WHY the project is importatn
+(PARAGRAPH)
+- WHY the project is important
 - How the system can be used
   
 ## Objectives
@@ -20,25 +21,38 @@ You can think of it as a tutorial with objectives, the expected results, known i
 - List hardware and software that we used/HOW TO DO IT
 
 ## Methodology
-BLAH BLAH intro line but just list steps w/ links
-- Aggregation of tools (link to file)
-- Data acquisition and research (link to file)
-- Model design in Edge Impulse (link to file)
-- Model training and testing
-- Hardware integration
-- Expected results
+(PARAGRAPH) BLAH BLAH intro line but just list steps w/ links
 
-## Tips & Tricks
-- Known issues and how to fix them
-- Things to watch out for/possible issues
+| Step | Process |
+|:-------------------|:-------------------|
+| Step 1: | [Aggregation of Tools](Tools.md) |
+| Step 2: | [Data Acquisition and Research](Data_Acquisition.md) |
+| Step 3: | [Model Design using Edge Impulse](Model_Design.md) |
+| Step 4: | [Model Training and Testing](Training_and_Testing.md) |
+| Step 5: | [Hardware Integration](Integration_and_Results.md) |
+| Step 6: | [Live Demonstration](Deployment.md) |
 
-## Conclusions
-- Lessons learned
-- Considerations
+## Results and Discussion
+(PARAGRAPH) BLAH
 
-## Expansions and Improvements
-- General advice
+### Model Performance
+(PARAGRAPH)
+- Discussion of results
+- Performance better? -- Link to strageties: issues folder > edge impulse
+  
+### Hardware Integration
+(PARAGRAPH)
+- Results/what would have been expected results
+- Issues with integration -- Link to mitigation strageties: issues folder > hardware integration
+
+### Personal Development
+(PARAGRAPH)
+- Lessons learned/i.e. advice
+- Considerations/what we would've done differently
+
+## Expansions
 - How the project could be bettered/future...
+- Possible inclusions -- Link to other implementations
 
 ## Project Deliverables
 | Date | Submission |
