@@ -53,6 +53,9 @@ To design, train, and deploy the ShazAnimal bioacoustic identification system, w
 If issues are experienced, or additional documentation is preferred: [Edge Impulse Issues](issues/Edge-Issues.md)
   
 ### Hardware Integration
+After the model is completed, it can be deployed on the edge device. A serial connection is the default way to receive the classification data once the model is flashed, as the board runs inferences continuously. 
+
+
 (PARAGRAPH)
 - Results/what would have been expected results
 - Issues with integration
