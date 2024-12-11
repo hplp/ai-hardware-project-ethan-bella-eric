@@ -8,6 +8,7 @@ Edge Impulse is a leading platform for developing, deploying, and optimizing mac
 Visit Edge Impulse to create a free account. This platform will be used to design, train, and deploy the machine learning model.
 
 Sign-Up Link: https://studio.edgeimpulse.com/signup
+
 Getting Started: https://www.edgeimpulse.com/blog/getting-started-with-edge-impulse/
     
 ### GitHub
@@ -16,6 +17,7 @@ GitHub is a web-based platform that provides version control, collaboration, and
 If you don’t already have one, create a GitHub account to manage your project repository and track changes.
 
 Sign-Up Link: https://github.com/join
+
 How-To Use: https://docs.github.com/en/get-started/start-your-journey/hello-world
 
 ## (2) Prepare and download software:
