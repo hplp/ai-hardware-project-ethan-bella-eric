@@ -15,6 +15,11 @@ The motivation for this project is to demonstrate the feasibility of deploying b
 - Integrate the program with the Syntiant TinyML board, utilizing the built-in microphone, so the system can be used on-site
   
 ## Necessary Technology
+The hardware foundation for this project includes the Syntiant TinyML board, which integrates the NDP101 Neural Decision Processor (NDP). The NDP101 is designed for efficient edge AI applications, leveraging compute-in-memory technology to achieve high parallelism and efficiency. It supports up to 589,000 parameters and delivers low-power, fast inferences on a compact 5mm x 5mm chip, making it ideal for resource-constrained environments. Additionally, the project requires a Linux or Linux-based system enabled device to host the necessary software.
+
+On the software side, the project utilizes tools such as Git for version control, edge-impulse-cli for deploying machine learning models, and arduino-cli for interfacing with the microcontroller. Edge Impulse Studio plays a central role in managing data, training models, and deploying them to the Syntiant NDP101. This robust toolchain ensures seamless integration of machine learning workflows for real-time bioacoustic signal processing.
+
+Below outlines the necessary technology to mimic our system development and deployment:
 Hardware:
 - Syntiant TinyML Board
 - Linux, or Linux-based system enabled device
