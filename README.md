@@ -46,9 +46,26 @@ To design, train, and deploy the ShazAnimal bioacoustic identification system, w
 ## Results and Discussion
 
 
-### Model Performance
-(PARAGRAPH)
-- Discussion of results
+### Model Performance and Results
+The model's performance was evaluated using standard machine learning metrics:
+- Performance Metrics
+  - Training Accuracy: Achieved 86.4%, exceeding the target of 80%.
+  - Training Loss: Minimal loss of 0.48, indicating strong convergence.
+  - Testing Accuracy: Comparable to training results, confirming the model’s ability to generalize.
+  - ![image](https://github.com/user-attachments/assets/f3f97323-dd36-47af-aba2-12b6ecb0a4c5)
+
+- Results Analysis
+  - The model demonstrated high accuracy across most classes, with a few misclassifications in clusters where sound characteristics overlapped (e.g., dogs and frogs).
+  - Model performance for each audio file:
+  - ![image](https://github.com/user-attachments/assets/ff93448f-d9a8-4a08-9b63-4ba051ad7e1c)
+
+- Confusion Matrix:
+  - Visualized the distribution of true positives, false positives, and misclassifications across the four animal categories.
+  - Showed high precision for cats and dogs, with minor errors in cow and frog classifications due to limited dataset size.
+  - ![image](https://github.com/user-attachments/assets/5e31a0a1-7458-43a5-aa1a-befdb741b0b2)
+
+
+
 
 If issues are experienced, or additional documentation is preferred: [Edge Impulse Issues](issues/Edge-Issues.md)
   
