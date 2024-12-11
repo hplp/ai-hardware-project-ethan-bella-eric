@@ -43,11 +43,11 @@ To design, train, and deploy the ShazAnimal bioacoustic identification system, w
 | Step 5:  [Hardware Integration](methods/Integration.md) |
 | Step 6:  [Deployment and Live Demo](methods/Deployment.md) |
 
-### Step 1: Aggregation of Tools
+## Step 1: Aggregation of Tools
 Before beginning the project, it will be necessary to set up various accounts, download the required tools, and prepare both the hardware and software environments. These steps ensure a smooth workflow for developing, training, and deploying the ShazAnimal system.
 
-#### (1) Create respective accounts:
-##### Edge Impulse
+### (1) Create respective accounts:
+#### Edge Impulse
 Edge Impulse is a leading platform for developing, deploying, and optimizing machine learning (ML) models specifically designed for edge devices. It provides tools to simplify the creation of ML models for real-world applications, such as audio, image, and sensor data processing, enabling low-latency and energy-efficient solutions.
 
 Visit Edge Impulse to create a free account. This platform will be used to design, train, and deploy the machine learning model.
@@ -56,7 +56,7 @@ Sign-Up Link: https://studio.edgeimpulse.com/signup
 
 Getting Started: https://www.edgeimpulse.com/blog/getting-started-with-edge-impulse/
     
-##### GitHub
+#### GitHub
 GitHub is a web-based platform that provides version control, collaboration, and project management tools for developers. It is built on top of Git, a widely-used distributed version control system, and offers additional features to facilitate software development, team collaboration, and project organization.
 
 If you don’t already have one, create a GitHub account to manage your project repository and track changes.
@@ -113,7 +113,7 @@ Install any necessary Python packages (e.g., numpy, matplotlib) as specified in 
 
 *By completing these steps, you’ll have all the tools and accounts needed to proceed with data acquisition, model design, and hardware integration. This setup forms the foundation for the entire project.*
 
-### Step 2: Data Acquisition and Research
+## Step 2: Data Acquisition and Research
 
 #### Research:
 - The first step in building a robust bioacoustic classification system is to identify the specific animals you want to classify. For this project, we focused on four animal categories: cats, cows, dogs, and frogs. These animals were chosen based on their distinct sound patterns and availability of audio data.
