@@ -53,14 +53,9 @@ To design, train, and deploy the ShazAnimal bioacoustic identification system, w
 If issues are experienced, or additional documentation is preferred: [Edge Impulse Issues](issues/Edge-Issues.md)
   
 ### Hardware Integration
-After the model is completed, it can be deployed on the edge device. A serial connection is the default way to receive the classification data once the model is flashed, as the board runs inferences continuously. 
+After the model is completed, it can be deployed on the edge device. A serial connection is the default way to receive the classification data once the model is flashed, as the board runs inferences continuously. The audio and classification data can also be sent to the Edge Impulse software to be incorporated into model training and testing, or it is simply a convenient way to store the deployed model results. Due to the issues detailed in the integration issues document, we were not able to deploy the model on the chip to run on-board model testing. However, had the model been on the board, we would have been able to find animals and use digital audio playback for testing the model. The device would classify the audio for each 3-second cycle into one of the 4 animal categories. The intention of this project was really a proof-of-concept for this application (the AI bioacoustic ID field seems surprisingly under-developed), since most people already can identify the sounds of cats, dogs, frogs and cows and none of them are rare species. So, it was unfortunate that we were not able to test this model in the field(s); but, we are confident that another approach, with a much more robust dataset, would have the capability to yield impressive results and to possibly change the field of ecologists and species preservationists. 
 
-
-(PARAGRAPH)
-- Results/what would have been expected results
-- Issues with integration
-
-If issues are experienced, or additional documentation is preffered: [Hardware Integration Issues](issues/Integration-Issues.md)
+If issues are experienced, or additional documentation is preferred: [Hardware Integration Issues](issues/Integration-Issues.md)
 
 ### Personal Development
 Through this project, several key lessons were learned that offer valuable insights for future endeavors. A major takeaway is the significant impact of processing blocks on the model's accuracy; careful selection and optimization of these blocks are crucial. It became evident that relying solely on spectrogram processing is insufficient for accurately classifying audio, highlighting the need to incorporate additional feature extraction techniques. Additionally, the importance of a robust and well-curated dataset for both training and testing processes cannot be overstated, as it directly influences the system’s performance.
