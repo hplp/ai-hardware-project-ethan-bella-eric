@@ -33,6 +33,7 @@ Before beginning the project, you will need to set up the necessary accounts, do
 ## Environment Configuration
 - Install Python:
   - Ensure Python is installed and configure a virtual environment for running scripts.
+  - Link: https://www.python.org/downloads/
 - Required Libraries:
   - Install any necessary Python packages (e.g., numpy, matplotlib) as specified in the requirements.txt file included in the repository.
 
