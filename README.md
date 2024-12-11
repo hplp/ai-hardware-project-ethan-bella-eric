@@ -39,7 +39,7 @@ To design, train, and deploy the ShazAnimal bioacoustic identification system, w
 | Step 2:  [Data Acquisition and Research](methods/Data-Acquisition.md) |
 | Step 3:  [Model Design using Edge Impulse](methods/Model-Design.md) |
 | Step 4:  [Model Training and Testing](methods/Training-and-Testing.md) |
-| Step 5:  [Hardware Integration](methods/Integration-and-Results.md) |
+| Step 5:  [Hardware Integration](methods/methods/Integration.md) |
 | Step 6:  [Deployment and Live Demo](methods/Deployment.md) |
 
 ## Results and Discussion
