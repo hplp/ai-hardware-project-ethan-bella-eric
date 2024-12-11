@@ -5,6 +5,7 @@ Before beginning the project, you will need to set up the necessary accounts, do
 - Edge Impulse Account:
   - Visit Edge Impulse to create a free account. This platform will be used to design, train, and deploy the machine learning model.
   - Link: https://studio.edgeimpulse.com/signup
+    
 - GitHub Account:
   - If you don’t already have one, create a GitHub account to manage your project repository and track changes.
   - Link: https://github.com/join
@@ -12,10 +13,13 @@ Before beginning the project, you will need to set up the necessary accounts, do
 ## Software to Download and Install
 - Linux or Linux-Based System:
   - Ensure you have access to a Linux environment (native or virtual). A Linux-based system simplifies the use of command-line tools required for this project.
+    
 - Git:
   - Install Git to clone and manage your GitHub repository. Instructions can be found here.
+    
 - Edge Impulse CLI:
   - Download the Edge Impulse CLI by following the instructions in the Edge Impulse documentation. This tool connects your local development environment to the Edge Impulse platform.
+    
 - Arduino CLI:
   - Install the Arduino CLI to interface with the TinyML board. Instructions are available on the Arduino CLI setup page.
 
@@ -34,6 +38,7 @@ Before beginning the project, you will need to set up the necessary accounts, do
 - Install Python:
   - Ensure Python is installed and configure a virtual environment for running scripts.
   - Link: https://www.python.org/downloads/
+    
 - Required Libraries:
   - Install any necessary Python packages (e.g., numpy, matplotlib) as specified in the requirements.txt file included in the repository.
 
