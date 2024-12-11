@@ -50,7 +50,7 @@ To design, train, and deploy the ShazAnimal bioacoustic identification system, w
 (PARAGRAPH)
 - Discussion of results
 
-If issues are experienced, or additional documentation is preffered: [Edge Impulse Issues](issues/Edge-Issues.md)
+If issues are experienced, or additional documentation is preferred: [Edge Impulse Issues](issues/Edge-Issues.md)
   
 ### Hardware Integration
 (PARAGRAPH)
