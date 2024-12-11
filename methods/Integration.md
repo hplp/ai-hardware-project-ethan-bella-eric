@@ -13,5 +13,5 @@
 4. Git is also required, and the newest version will suffice. Remember to add these tools to the PATH or the necessary folder fos Linux OS to ensure they are available. 
 5. Install the Edge-Impulse CLI (https://docs.edgeimpulse.com/docs/tools/edge-impulse-cli/cli-installation)
 6. Confirm the board is connected. To see connected boards, run _arduino-cli board list_
-7. Run the OS-appropriate flash script. 
+7. Run the OS-appropriate flash script.
 
