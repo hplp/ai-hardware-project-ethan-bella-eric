@@ -86,3 +86,8 @@ These expansions not only align with the project's goals of automation and acces
 | November 7th, 2024 | [Project Proposal](Project-Proposal.md) |
 | November 26th, 2024 | [Milestone 1](Milestone-1.md) |
 | December 5th, 2024 |[Final Project Presentation](Final-Project-Presentation.pdf) |
+
+
+
+
+![](.github/logo.png)
