@@ -136,13 +136,117 @@ Through Kaggle, we downloaded datasets containing sounds for each of our target 
 #### Importance of Research and Data Quality
 The selection of high-quality audio files and the use of a reputable source like Kaggle ensure that our dataset is robust and capable of supporting accurate classification. Future improvements may involve sourcing additional datasets or recording custom audio to expand the diversity of the samples.
 
+## Step 3: Model Design in Edge Impulse
+
+### Loading Audio Data
+After collecting audio data, the next step is to upload the files into Edge Impulse Studio. The platform simplifies the process of designing, training, and deploying machine learning models.
+- File Format: Ensure all files are in .wav format to preserve the highest audio quality.
+- Navigate to the Data Acquisition tab in Edge Impulse. Use the upload tool to add your categorized audio files for each target animal. Assign labels to each file to differentiate the animal categories.
+
+### Test Split
+To evaluate the model's performance accurately, the dataset was split into training and testing subsets using the split shown below:
+- Training Set: 82% of the dataset (464 audio files) for training the model.
+- Testing Set: 18% of the dataset (99 audio files) for testing the model's generalization ability.
+- ![image](https://github.com/user-attachments/assets/9755921d-a53e-478d-b530-2b4b78c3c3b6)
+
+This split ensures the model learns from the majority of the data while being tested on unseen examples for unbiased evaluation.
+
+### Definition of Model Input
+The raw audio files were processed into a standardized format for consistent input to the machine learning model.
+- Each audio file was segmented into 3-second windows. For files longer than 3 seconds, a 1-second stride was applied to extract additional samples.
+- A nominal sampling frequency, common for digital audio, was used across all files. This ensured uniformity and compatibility with Edge Impulse’s processing blocks.
+- The raw audio signals were represented as time-series data, ready for further transformation by the processing blocks.
+- ![image](https://github.com/user-attachments/assets/b67e2824-9dab-46b1-ba52-656c2ee1a899)
 
 
+### Development of Processing Blocks
+Processing blocks are critical for transforming raw audio signals into features that the learning block can use for classification. We chose to use two different processing blocks, a MFE and a Spectrogram:
+- Mel Frequency Energy (MFE):
+  - Extracts key features from the audio signal by focusing on frequency ranges relevant to animal vocalizations.
+  - Emphasizes the audio characteristics most useful for classification, such as pitch and tonal variations.
+  - MFE Settings:
+  - ![image](https://github.com/user-attachments/assets/e1c95835-73dc-4e88-9f8e-58ea795fedf9)
+  - MFE Results:
+  - ![image](https://github.com/user-attachments/assets/1f13955b-186d-45e9-b033-7033a032a97a)
+  - ![image](https://github.com/user-attachments/assets/61f46946-6a9c-4d75-8a47-d943029f56cb)
 
+- Spectrogram:
+  - Provides a detailed visualization of audio frequencies over time, highlighting changes in frequency patterns.
+  - The spectrogram was particularly useful for identifying dynamic features in animal sounds, such as a frog’s croak or a cat’s meow.
+  - Spectrogram Settings:
+  - ![image](https://github.com/user-attachments/assets/0bf6a5ea-db60-4555-9f2d-e4fb334ac3d3)
+  - Spectrogram Results:
+  - ![image](https://github.com/user-attachments/assets/04e7201b-e7f6-4940-b16f-064cc48fe2ff)
+  - ![image](https://github.com/user-attachments/assets/b23aae83-3dbb-45bb-bc63-79998ae715b5)
+
+By combining these two processing blocks, the model could capture both static and dynamic features, ensuring robust classification.
+
+### Definition of Classification Block
+The Classification Learning Block was used to train the model to distinguish between the four animal categories.
+- Input Features:
+  - The processed outputs from the MFE and Spectrogram blocks (a total of 48,139 features) were fed into the learning block.
+  - ![image](https://github.com/user-attachments/assets/4d6f3355-3afc-4a1f-872f-108d6ff460b2)
+    
+- Algorithm:
+  - A lightweight neural network was selected, designed to run efficiently on resource-constrained edge devices like the Syntiant TinyML board.
+
+- Output Classes:
+  - The learning block was configured to classify each audio sample into one of the four categories: cat, cow, dog, or frog.
+  - ![image](https://github.com/user-attachments/assets/a3e66502-495c-4519-b40f-89f42d7442dd)
+
+This learning block forms the core of the classification system, translating processed audio data into actionable results.
+
+## Step 4: Model Training and Testing
+
+### Model Training Parameters
+To train the model effectively, we configured the following parameters in Edge Impulse Studio:
+- Epochs: The model was trained for 50 epochs, a sufficient number to allow the model to converge without overfitting.
+- Learning Rate: We used a learning rate of 0.0005 to allow the model to learn slowely and stablely over the 50 epochs. 
+- Batch Size: Default values were used to ensure efficient computation while accommodating the dataset size.
+- ![image](https://github.com/user-attachments/assets/84b7dc18-7b9e-4906-bc47-4752767b0095)
+
+### Testing the Model
+Once training was completed, the model was tested on the reserved testing subset to evaluate its generalization ability.
+- Testing Methodology:
+  - Testing data consisted of 99 audio files, 18% of the dataset.
+  - Edge Impulse automatically applied the trained model to unseen test samples.
+    
+- Validation Process:
+  - Results were reviewed to identify misclassified samples and patterns in classification errors.
+  - The confusion matrix was analyzed to determine how well the model distinguished between classes.
+    
+- Testing Workflow
+  - Navigate to the Model Testing tab in Edge Impulse Studio.
+  - Select the testing dataset and verify preprocessing settings.
+  - Run the testing process and observe the model's predictions for each class.
+
+## Step 5: Integration with Hardware
+
+### Exporting Model Design
+1. Go to the deployment tab in the Edge Impulse software
+2. Select the Syntiant TinyML board
+3. Configure the posterior parameters
+4. Build the model; the .zip file should download on completion. The file contains the compiled model information and the OS-specific flash scripts (Linux works best)
+
+### Establishing a Physical Connection and **Flashing** the Model
+1. Connect the board to your computer via a data-transfer capable USB cable, it may appear as an Arduino MKRZero device
+2. For projects using the IMU, ensure the SD card is inserted (not necessary for this project)
+3. Install the Arduino CLI (https://arduino.github.io/arduino-cli/0.24/installation/). A version older than 1.0.0 is necessary to match with the outdated Edge-Impulse CLI
+4. Git is also required; the newest version will suffice. Remember to add these tools to the PATH or the necessary folder for Linux OS to ensure they are available. 
+5. Install the Edge-Impulse CLI (https://docs.edgeimpulse.com/docs/tools/edge-impulse-cli/cli-installation)
+6. Confirm the board is connected. To see connected boards, run _arduino-cli board list_
+7. Run the OS-appropriate flash script.
+
+## Step 6: Deployment and Live Demo
+
+### Deployment Process
+After the model is flashed to the Syntiant TinyML board, connect using the edge-impulse-daemon which uses a serial connection to the board. The edge-impulse-data-forwarder can also be used to send the data to the Edge Impulse software for further model development. If you are having connectivity or board detection issues but you managed to flash the model, you can specify the COM port to which the daemon serial script will connect with. There may be additional approaches online which utilize the Arduino IDE if you have trouble with both of the guides provided in the integration issues document. 
+
+### Expected Demonstration Results
+After the model is flashed on the board and the serial data connection is established for monitoring / data collection, the model will continuously run. Each inference is based on a "live" 3-second audio sample. You can monitor the classification the model gives for each inference using the serial connection, or program the board LEDs for visual signaling. Deployed testing can be executed, whether using digital audio recordings or live animals. The data-forwarder is very useful for testing as you can automatically aggregate the audio samples and classification results in the Edge Impulse software. If the animal noise is coming from a known species, then the accuracy of the deployed model can be calculated. The accuracy of our model was relatively high for the testing done through the Edge Impulse software, so deployed testing would be expected to yield a similar level of accuracy. 
 
 
 ## Results and Discussion
-
 
 ### Model Performance and Results
 The model's performance was evaluated using standard machine learning metrics:
