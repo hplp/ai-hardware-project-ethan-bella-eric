@@ -26,7 +26,7 @@ Software:
 - Edge Impulse Studio
 
 ## Methodology
-(PARAGRAPH) BLAH BLAH intro line but just list steps w/ links
+To design, train, and deploy the ShazAnimal bioacoustic identification system, we followed a systematic approach that ensures reproducibility and scalability. Each step in the process builds on the previous, guiding the project from data collection to real-world deployment. Below, we outline the key steps in our methodology with links to detailed explanations for each:
 
 | How-To Guide: |
 |:-------------------|
