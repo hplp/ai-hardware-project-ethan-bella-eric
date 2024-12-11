@@ -11,7 +11,7 @@
 2. For projects using the IMU, ensure the SD card is inserted (not necessary for this project)
 3. Install the Arduino CLI (https://arduino.github.io/arduino-cli/0.24/installation/). A version older than 1.x.x is necessary to match with the outdated Edge-Impulse CLI
 4. Install the Edge-Impulse CLI (https://docs.edgeimpulse.com/docs/tools/edge-impulse-cli/cli-installation)
-5. Confirm the board is connected and run the OS-appropriate flash script. To see connected boards, run [arduino-cli board list].
+5. Confirm the board is connected and run the OS-appropriate flash script. To see connected boards, run _arduino-cli board list_
 
 ## **Flashing** the Model
 How to flash
