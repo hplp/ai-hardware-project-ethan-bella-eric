@@ -20,6 +20,7 @@ The hardware foundation for this project includes the Syntiant TinyML board, whi
 On the software side, the project utilizes tools such as Git for version control, edge-impulse-cli for deploying machine learning models, and arduino-cli for interfacing with the microcontroller. Edge Impulse Studio plays a central role in managing data, training models, and deploying them to the Syntiant NDP101. This robust toolchain ensures seamless integration of machine learning workflows for real-time bioacoustic signal processing.
 
 Below outlines the necessary technology to mimic our system development and deployment:
+
 Hardware:
 - Syntiant TinyML Board
 - Linux, or Linux-based system enabled device
@@ -47,21 +48,29 @@ To design, train, and deploy the ShazAnimal bioacoustic identification system, w
 ### Model Performance
 (PARAGRAPH)
 - Discussion of results
-- Performance better? -- Link to explanation of issue/mitigation strat --  [Edge Impulse Issues](issues/Edge-Issues.md)
+
+If issues are experienced, or additional documentation is preffered: [Edge Impulse Issues](issues/Edge-Issues.md)
   
 ### Hardware Integration
 (PARAGRAPH)
 - Results/what would have been expected results
-- Issues with integration -- Link to explanation of issue/mitigation strat --  [Hardware Integration Issues](issues/Integration-Issues.md)
+- Issues with integration
+
+If issues are experienced, or additional documentation is preffered: [Hardware Integration Issues](issues/Integration-Issues.md)
 
 ### Personal Development
-(PARAGRAPH)
-- Lessons learned/i.e. advice
-- Considerations/what we would've done differently
+Through this project, several key lessons were learned that offer valuable insights for future endeavors. A major takeaway is the significant impact of processing blocks on the model's accuracy; careful selection and optimization of these blocks are crucial. It became evident that relying solely on spectrogram processing is insufficient for accurately classifying audio, highlighting the need to incorporate additional feature extraction techniques. Additionally, the importance of a robust and well-curated dataset for both training and testing processes cannot be overstated, as it directly influences the system’s performance.
 
-## Expansions
-- How the project could be bettered/future...
-- Possible inclusions -- Link to other implementations
+Reflecting on the hardware integration process, significant challenges were encountered in establishing reliable communication between the software and the Syntiant board. Addressing these issues required ensuring that relevant tool files were accessible in the Ubuntu environment, reconfiguring the Syntiant link, and exploring device-specific workarounds. This phase highlighted the critical importance of maintaining seamless connections, accurate downloads, and properly configured profiles to enable smooth interaction between hardware and software. These challenges served as a valuable learning experience, emphasizing the need for thorough preparation and adaptability when working with advanced embedded systems.
+
+Despite these hurdles, the project achieved its primary objectives. The system was successfully designed and is capable of accurately classifying animal calls, with defined classes tested and achieving an accuracy rate exceeding 80% with minimal loss. These results affirm the feasibility of using the Syntiant TinyML hardware for edge AI applications and pave the way for future enhancements and impactful real-world implementations.
+
+## Expansions and Improvements
+Looking forward, there are several ways this project could be improved and expanded to enhance its capabilities and scope. One key improvement would be to increase the accuracy of the model by acquiring a larger dataset, with at least 500 audio files per animal to support more robust training. This would not only improve classification accuracy but also enable the addition of more animal classes, extending the system's functionality beyond its current scope. Achieving this expansion would require a targeted effort to locate and incorporate additional audio files from reliable sources.
+
+For a more realistic on-site implementation, the system could integrate another processing block to streamline the identification process. This might involve combining multiple feature extraction techniques to better handle environmental noise and variability. Additionally, incorporating a visual aid component—such as a display screen or mobile app integration—could improve user accessibility, making the system more intuitive for a broader audience.
+
+Linking this project to other bioacoustic implementations, such as regional wildlife monitoring systems or educational platforms, would also provide valuable opportunities for collaboration and knowledge sharing. These expansions not only align with the project's goals of automation and accessibility but also lay the groundwork for future advancements in edge AI applications.
 
 ## Project Deliverables
 | Date | Submission |
