@@ -47,9 +47,10 @@ By combining these two processing blocks, the model could capture both static an
 The Classification Learning Block was used to train the model to distinguish between the four animal categories.
 - Input Features:
   - The processed outputs from the MFE and Spectrogram blocks (a total of 48,139 features) were fed into the learning block.
+  - ![image](https://github.com/user-attachments/assets/4d6f3355-3afc-4a1f-872f-108d6ff460b2)
+    
 - Algorithm:
   - A lightweight neural network was selected, designed to run efficiently on resource-constrained edge devices like the Syntiant TinyML board.
-- ![image](https://github.com/user-attachments/assets/4d6f3355-3afc-4a1f-872f-108d6ff460b2)
 
 - Output Classes:
   - The learning block was configured to classify each audio sample into one of the four categories: cat, cow, dog, or frog.
